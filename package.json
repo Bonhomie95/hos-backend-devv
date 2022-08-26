@@ -1,0 +1,71 @@
+{
+  "name": "@hos-backend/user-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "16.15.0"
+  },
+  "scripts": {
+    "start": "node dist/src/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "yarn tsc",
+    "test": "jest",
+    "typeorm:cli": "ts-node ./node_modules/typeorm/cli -- migration:create -- config ./src/database/config/index.ts",
+    "db:migrate": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HouseOfSounds/hos-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HouseOfSounds/hos-backend/issues"
+  },
+  "homepage": "https://github.com/HouseOfSounds/hos-backend#readme",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/node": "^17.0.26",
+    "@types/node-schedule": "^2.1.0",
+    "@types/nodemailer": "^6.4.4",
+    "@types/pg": "^8.6.5",
+    "eslint": "^8.14.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@types/compression": "^1.7.2",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/cors": "^2.8.12",
+    "@types/express-validator": "^3.0.0",
+    "@types/helmet": "^4.0.0",
+    "@types/morgan": "^1.9.3",
+    "@types/multer": "^1.4.7",
+    "@types/web-push": "^3.3.2",
+    "@types/winston": "^2.4.4",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.3",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.3",
+    "mongoose": "^6.5.2",
+    "multer": "^1.4.5-lts.1",
+    "node-schedule": "^2.1.0",
+    "nodemailer": "^6.7.5",
+    "pg": "^8.7.3",
+    "reflect-metadata": "^0.1.13",
+    "short-unique-id": "^4.4.4",
+    "typeorm": "^0.3.6",
+    "web-push": "^3.5.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  }
+}
