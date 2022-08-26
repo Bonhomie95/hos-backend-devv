@@ -8,7 +8,6 @@ var upload = multer({
   dest: './public'
 })
 
-
 router.post("", Authenticate,upload.single("file"), newCave);
 router.get("/", Authenticate, getCave);
 router.patch("/", Authenticate,upload.single("file"), updateCave);
