@@ -5,7 +5,7 @@ const { newCave, getCave, updateCave } = require("../controller/CaveController")
 import multer from "multer";
 
 var upload = multer({
-  dest: './public'
+  dest: 'public'
 })
 
 router.post("", Authenticate,upload.single("file"), newCave);
