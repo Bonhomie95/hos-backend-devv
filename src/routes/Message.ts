@@ -5,7 +5,7 @@ import Authenticate from "../middlewares/guards/Authenticate";
 import multer from "multer";
 
 var upload = multer({
-  dest: './public'
+  dest: 'public'
 })
 
 
